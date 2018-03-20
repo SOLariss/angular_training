@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {Counter} from './counter/counter.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import {Counter} from './counter/counter.component';
     Counter
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

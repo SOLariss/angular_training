@@ -1,0 +1,35 @@
+.counter{
+    &-wrapper{
+        width: 100%;
+    }
+    &-label{
+        font-family: "Arial";
+        text-align: left;
+        font-weight: 500;
+        padding: 0.2rem;
+        padding-right: 0;
+        &-required {
+            color: red;
+            &_hidden {
+                display: none;
+            }
+        }
+    }
+    &-content{
+        display: flex;
+        border: 1px solid grey;
+        height: 2.2rem;
+        &-prefix, &-suffix{
+            text-align: center;
+            padding: 0.5rem;            
+        }
+        &-input {
+           flex-grow: 2;
+        }              
+    }
+    &-error{
+        &_hidden{
+            display: none;
+        }
+    }
+}
